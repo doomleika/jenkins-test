@@ -1,20 +1,12 @@
 pipeline {
     agent none
     stages {
-        stage('Build') {
+        stage('Env') {
             agent {
-                docker { image 'maven:3-alpine' }
+                docker { image 'python:3.7-buster' }
             }
             steps {
-                sh 'mvn --version'
-            }
-        }
-        stage('Test') {
-            agent {
-                docker { image 'node:14-alpine' }
-            }
-            steps {
-                sh 'node --version'
+                sh '/bin/bash .ci/00200_requirements/run.sh'
             }
         }
     }
