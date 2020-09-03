@@ -1,0 +1,7 @@
+{
+    "jenkins.pipeline.linter.connector.url": "http://localhost:58080/pipeline-model-converter/validate",
+    "jenkins.pipeline.linter.connector.crumbUrl": "http://localhost:58080/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,%22:%22,//crumb)",
+    // "jenkins.pipeline.linter.connector.token": "115a19bd28e56fa4da2b3d6abed0acdd18",
+    "jenkins.pipeline.linter.connector.user": "doomleika",
+    "jenkins.pipeline.linter.connector.pass": "fuckj3nkinswtf???"
+}
